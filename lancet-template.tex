@@ -1,0 +1,241 @@
+% 
+\documentclass[review,10pt]{elsarticle} % lancet: text font 10 
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[unicode=true, bookmarks=false]{hyperref}
+\usepackage[latin9]{inputenc}
+\usepackage{times} % lancet: times new roman
+\usepackage[verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
+\usepackage{setspace} 
+\singlespacing % lancet: single spacing
+\usepackage{lineno}
+\modulolinenumbers[5]
+\linenumbers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lance specific LaTeX commands.
+\usepackage[superscript]{cite}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\sffamily}
+\titleformat*{\subsection}{\normalsize\bfseries\sffamily}
+\titleformat*{\subsubsection}{\small\bfseries\sffamily}
+\newcommand{\absdiv}[1]{%
+  \par\addvspace{.5\baselineskip}% adjust to suit
+  \noindent\textbf{#1}\quad\ignorespaces}
+\renewenvironment{abstract}{\global\setbox\absbox=\vbox\bgroup
+  \hsize=\textwidth\def\baselinestretch{1}%
+  \noindent\unskip\textbf{\large Summary}
+  \par\medskip\noindent\unskip\ignorespaces}{\egroup}
+\makeatletter
+\renewcommand\@biblabel[1]{#1} 
+\makeatother
+\journal{Lancet}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\providecommand{\tabularnewline}{\\}
+%
+
+\begin{document}
+\begin{frontmatter}
+\title{Universal trends of COVID-19 first-wave in G20 nations}
+% \title{Impromptu prediction of Corona virus distribution \tnoteref{mytitlenote}}
+% \tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+% \author[UHM]{Albert S. Kim\corref{corrauth}} % \fnref{myfootnote}
+% \address[UHM]{Civil and Environmental Engineering, University of Hawaii at Manoa}
+\author{Albert S. Kim\corref{corrauth}} % \fnref{myfootnote}
+\address{ Civil and Environmental Engineering, University of Hawaii at Manoa, 2540 Dole Street Holmes 383, Honolulu, HI 96822, U.S.A.}
+\fntext[myfootnote]{Since 1880.}
+\cortext[corrauth]{Corresponding author}
+\ead[url]{albertsk.org}
+\ead{albertsk@hawaii.edu}
+% \author[addr2]{Steve Jobs}
+% \address[addr2]{1600 John F Kennedy Boulevard, Philadelphia}
+% \author[addr3]{Global Customer Service}
+% \address[addr3]{360 Park Avenue South, New York}
+%
+
+\begin{abstract}
+  \absdiv{\textcolor{purple}{Background}}
+  Background here
+
+  \absdiv{\textcolor{purple}{Methods}}
+  Methods here
+
+  \absdiv{\textcolor{purple}{Findings}}
+  Findings here
+
+  \absdiv{\textcolor{purple}{Interpretations}}
+  Interpretations here
+
+  \absdiv{\textcolor{purple}{Funding}}
+  funding here
+
+  \absdiv{\textcolor{purple}{Copyright}}
+  This template helps you to create a properly formatted \LaTeX{}\ manuscript.
+\end{abstract}
+
+\begin{keyword}
+\texttt{elsarticle.cls}\sep \LaTeX{}\sep Elsevier \sep template
+\MSC{[}2010{]} 00-01\sep 99-00 
+\end{keyword}
+
+\end{frontmatter}
+
+
+\section*{Introduction}
+
+About 1·8 billion people live in fragile contexts worldwide,1 including 168 million individuals in need of humanitarian assistance. Approximately a quarter of those in fragile contexts are women and girls of reproductive age.2 Experience from past epidemics in these settings has showed that discontinuing health-care services deemed unrelated to the epidemic response resulted in more deaths than did the epidemic itself.3 Issues related to sexual and reproductive health are among the leading causes of mortality and morbidity among women of childbearing age, with countries affected by fragility and crisis accounting for 61\% of maternal deaths worldwide.4
+
+Introduction here  
+% 
+Work is done\cite{cowling-2020-impac-hong-kong,leung-2020-first-wave-covid}.
+In their work\cite{leung-2020-first-wave-covid},
+
+\fbox{\parbox{\textwidth}{
+    \subsection*{\textcolor{purple}{Research in context}}
+    \subsubsection*{Evidence before this study}
+        Some very long text that would not be allowed in an fbox.
+    \subsubsection*{Added value of this study}
+        Some very long text that would not be allowed in an fbox.
+    \subsubsection*{Implications of all the availabl evidence}
+    
+    Some very long text that would not be allowed in an fbox.
+}}
+% \newpage{}
+
+\section*{Methods}
+
+\subsection*{Data}
+
+\subsection*{Data}
+
+\subsection*{Role of the funding source}
+
+%\subsection*{Statistical analysis}
+
+%\subsection*{Italy and European countries}
+ 
+%\subsubsection*{Italy and European countries}
+
+The accumulated death number  
+
+\section*{Results}
+
+\section*{Discussion}
+Corona virus, covid19,  
+
+\subsubsection*{Contributors}
+
+\subsubsection*{Declaration of interests}
+We declare no competing interests.
+Acknowledgments
+
+\subsubsection*{Acknowledgments}
+We thank The Unive
+\subsection*{References}
+
+\bibliographystyle{vancouver}
+\bibliography{lancet-sample}
+
+
+\newpage{}
+
+
+
+\begin{table}[H]
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+ & Nation & $\tau_{c}$ & $\tau_{d}$ & $\beta_{c}$ & $\beta_{d}$\tabularnewline
+\hline 
+1 & IT & 53 & 57 & 1.0000 & 1.0000\tabularnewline
+\hline 
+2 & FR & 59 & 68 & 0.8210 & 1.0946\tabularnewline
+\hline 
+3 & DE & 60 & 75 & 0.9760 & 0.7254\tabularnewline
+\hline 
+4 & UK & 66 & 72 & 0.8845 & 1.0511\tabularnewline
+\hline 
+5 & TR & 75 & 80 & 1.0062 & 0.6447\tabularnewline
+\hline 
+6 & AR & 69 & 85 & 0.3233 & 0.3632\tabularnewline
+\hline 
+7 & AU & 65 & 85 & 0.4398 & 0.4078\tabularnewline
+\hline 
+8 & BR & 68 & 79 & 0.6600 & 0.6461\tabularnewline
+\hline 
+9 & CN & 17 & 19 & 1.2065 & 0.7166\tabularnewline
+\hline 
+10 & CA & 69 & 79 & 0.6416 & 0.5930\tabularnewline
+\hline 
+11 & IN & 74 & 83 & 0.6252 & 0.5435\tabularnewline
+\hline 
+12 & ID & 72 & 80 & 0.5003 & 0.4432\tabularnewline
+\hline 
+13 & JP & 46 & 70 & 0.2507 & 0.3732\tabularnewline
+\hline 
+14 & MX & 72 & 83 & 0.4646 & 0.6205\tabularnewline
+\hline 
+15 & RU & 74 & 83 & 0.6252 & 0.5435\tabularnewline
+\hline 
+16 & SA & 74 & 88 & 0.4229 & 0.4194\tabularnewline
+\hline 
+17 & ZA & 74 & 83 & 0.6252 & 0.5435\tabularnewline
+\hline 
+18 & KR & 50 & 56 & 1.0156 & 0.2222\tabularnewline
+\hline 
+19 & US & 62 & 70 & 0.7788 & 1.0776\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+\caption{\textbf{Parameters of} the scaling model.\label{tab:Scaling-Param}}
+\end{table}
+
+==
+
+\begin{figure}[H]
+\begin{centering}
+%\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/linear-G19-accu-cases}
+%\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/linear-G19-accu-deaths}
+\par\end{centering}
+\caption{\textbf{Nations accumulated number} of (a) cases and (b) death occurred versus
+time (day) from December 31, 2019.\label{fig:G19-cases-death-linear}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+%\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/linear-European-accu-cases}\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/scaled-European-accu-cases}
+\par\end{centering}
+\caption{\textbf{European nations} accumulated number of cases in the (a) linear and
+(b) reduced time scales, respectively. \label{fig:European-cases-reduced}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+%\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/linear-Europiean-accu-deaths}\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/scaled-European-accu-death}
+\par\end{centering}
+\caption{\textbf{European nations} accumulated number of deaths in the (a) linear and
+(b) reduced time scales, respectively.\label{fig:European-deaths-reduced}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+%\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/scaled-G19-accu-cases}
+%\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/scaled-G19-accu-death}
+\par\end{centering}
+\caption{\textbf{Nations accumulated numbe}r of (a) cases and (b) death occurred versus
+the reduced time from abrupt increases of cases and death, respectively.
+\label{fig:G19-deaths-linear} }
+\end{figure}
+
+\begin{figure}[H]
+%\centering{}\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/scaled-US-vs-IT-accu-cases}\includegraphics[width=3in]{/home/albertsk/Documents/research/scratch/covid19_v2/manuscript/figures/scaled-US-vs-IT-accu-deaths}\caption{US data predicted using Italy's trend}
+\end{figure}
+
+ 
+
+
+ 
+\end{document}
